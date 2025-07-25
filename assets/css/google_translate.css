@@ -1,0 +1,13 @@
+/* Hide Google Logo */
+.goog-te-gadget img {
+    display: none !important;
+}
+/* Hide "Powered by" Text */
+.goog-te-gadget > span > a {
+    display: none !important;
+}
+/* Control margin/padding of "Language Selection" */
+.goog-te-gadget-simple span:first-child {
+    margin: 5px;
+    padding-right: 3px;
+}
