@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebSocket/STOMP Debug Console (KO)</title>
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --surface: #ffffff;
+      --line: #d8dce7;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #1d4ed8;
+      --accent-soft: #e7efff;
+      --err: #b91c1c;
+      --shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 24px;
+      font-family: "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      background: linear-gradient(180deg, #f7f9ff 0%, #f3f5fa 100%);
+      color: var(--text);
+    }
+    h1, h2 { margin: 0; }
+    p { margin: 0; color: var(--muted); }
+    .page { max-width: 1320px; margin: 0 auto; }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .hero h1 { font-size: 28px; font-weight: 700; }
+    .hero p { margin-top: 8px; max-width: 720px; line-height: 1.6; }
+    .hint {
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 340px minmax(0, 1fr);
+      gap: 20px;
+    }
+    .column { display: grid; gap: 16px; align-content: start; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 18px;
+    }
+    .card h2 { font-size: 16px; margin-bottom: 4px; }
+    .card .sub { font-size: 13px; color: var(--muted); margin-bottom: 14px; line-height: 1.5; }
+    .field { display: grid; gap: 6px; margin-bottom: 12px; }
+    label { font-size: 13px; color: var(--muted); font-weight: 600; }
+    input, select, textarea {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px 12px;
+      font-size: 14px;
+      color: var(--text);
+      background: #fff;
+      outline: none;
+    }
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      line-height: 1.5;
+    }
+    .row { display: flex; gap: 10px; flex-wrap: wrap; }
+    button {
+      border: 0;
+      border-radius: 12px;
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .primary { background: var(--accent); color: #fff; }
+    .secondary { background: #eef2ff; color: #344054; }
+    .danger { background: #fee2e2; color: var(--err); }
+    .status-bar { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }
+    .badge { border-radius: 999px; padding: 7px 12px; font-size: 12px; font-weight: 700; }
+    .badge.off { background: #e5e7eb; color: #4b5563; }
+    .badge.on { background: #dcfce7; color: #166534; }
+    .badge.subscribed { background: #dbeafe; color: #1d4ed8; }
+    .two-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .log-panel { min-height: 620px; display: grid; gap: 12px; }
+    .log-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+    .log {
+      min-height: 520px;
+      max-height: 70vh;
+      overflow: auto;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      background: #0f172a;
+      color: #e5e7eb;
+      padding: 14px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      line-height: 1.55;
+    }
+    .small { font-size: 12px; color: var(--muted); }
+    @media (max-width: 1080px) { .grid { grid-template-columns: 1fr; } }
+    @media (max-width: 720px) { body { padding: 16px; } .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <section class="hero">
+      <div>
+        <h1>WebSocket/STOMP Debug Console</h1>
+        <p>브라우저에서 endpoint, header, topic, destination, payload를 직접 바꿔가며 실시간 채널을 점검하는 내부 QA/운영 디버그 콘솔입니다.</p>
+      </div>
+      <div class="hint">`file://`로 열지 말고 정적 서버로 여세요. 예: <code>python3 -m http.server 3000</code></div>
+    </section>
+
+    <div class="grid">
+      <div class="column">
+        <section class="card">
+          <h2>Connection</h2>
+          <div class="sub">WebSocket endpoint와 연결 옵션을 설정합니다.</div>
+          <div class="field">
+            <label for="broker-url">Broker URL</label>
+            <input id="broker-url" value="ws://localhost:5001/ws" />
+          </div>
+          <div class="two-col">
+            <div class="field">
+              <label for="protocol-mode">Protocol</label>
+              <select id="protocol-mode">
+                <option value="stomp">STOMP</option>
+                <option value="raw">Raw WebSocket</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="transport">Transport</label>
+              <select id="transport">
+                <option value="websocket">WebSocket</option>
+                <option value="sockjs">SockJS</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="reconnect-delay">Reconnect Delay(ms)</label>
+              <input id="reconnect-delay" type="number" value="5000" min="0" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="connect-headers">Connect Headers(JSON)</label>
+            <textarea id="connect-headers">{
+}</textarea>
+          </div>
+          <div class="row">
+            <button id="connect" class="primary">connect</button>
+            <button id="disconnect" class="secondary">disconnect</button>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Subscribe</h2>
+          <div class="sub">topic을 입력하고 구독 또는 해제합니다.</div>
+          <div class="field">
+            <label for="subscribe-topic">Topic</label>
+            <input id="subscribe-topic" value="/topic/panel/status-board/202604060001" />
+          </div>
+          <div class="row">
+            <button id="subscribe" class="primary">subscribe</button>
+            <button id="unsubscribe" class="secondary">unsubscribe</button>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Send</h2>
+          <div class="sub">destination과 payload를 지정해 STOMP SEND를 보냅니다.</div>
+          <div class="field">
+            <label for="send-destination">Destination</label>
+            <input id="send-destination" placeholder="/app/example" />
+          </div>
+          <div class="field">
+            <label for="send-headers">Send Headers(JSON)</label>
+            <textarea id="send-headers">{
+}</textarea>
+          </div>
+          <div class="field">
+            <label for="send-body">Body</label>
+            <textarea id="send-body">{
+  "message": "hello"
+}</textarea>
+          </div>
+          <div class="row">
+            <button id="send" class="primary">send</button>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Preset</h2>
+          <div class="sub">자주 쓰는 endpoint/topic 조합을 브라우저에 저장합니다.</div>
+          <div class="field">
+            <label for="preset-name">Preset Name</label>
+            <input id="preset-name" placeholder="panel-status-board-local" />
+          </div>
+          <div class="field">
+            <label for="preset-list">Saved Presets</label>
+            <select id="preset-list"></select>
+          </div>
+          <div class="row">
+            <button id="save-preset" class="secondary">save preset</button>
+            <button id="load-preset" class="secondary">load preset</button>
+            <button id="delete-preset" class="danger">delete preset</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="column">
+        <section class="card log-panel">
+          <div class="status-bar">
+            <span id="connection-status" class="badge off">disconnected</span>
+            <span id="subscription-status" class="badge off">not subscribed</span>
+          </div>
+          <div class="log-toolbar">
+            <div class="small">STOMP debug, message, websocket error, stomp error를 시간과 함께 기록합니다.</div>
+            <div class="row">
+              <button id="clear-log" class="secondary">clear log</button>
+            </div>
+          </div>
+          <pre id="log" class="log"></pre>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@stomp/stompjs@7.2.0/bundles/stomp.umd.min.js"></script>
+  <script>
+    const STORAGE_KEY = "generic-websocket-tester.presets.ko";
+    const labels = {
+      connectError: "먼저 connect를 수행해야 합니다.",
+      brokerRequired: "Broker URL은 필수입니다.",
+      topicRequired: "subscribe topic은 필수입니다.",
+      destinationRequired: "send destination은 필수입니다.",
+      presetNameRequired: "preset name은 필수입니다.",
+      presetSelectRequired: "preset을 먼저 선택하세요.",
+      presetDeleteRequired: "삭제할 preset name이 없습니다.",
+      clientNotInitialized: "client not initialized",
+      subscriptionNotFound: "subscription not found",
+      alreadyConnected: "already connected",
+      connected: "connected",
+      disconnected: "disconnected"
+    };
+  </script>
+  <script src="./shared-app-ko.js"></script>
+</body>
+</html>
