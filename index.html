@@ -1,144 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/google_translate.css">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" integrity="sha256-Lfgh4c+xY/FqajT28Omn4hGTf0DE/vxSLDekfNrGA8M=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-  <title>Engineer Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yun Kisoo | Senior Backend Engineer</title>
+  <!-- Global stylesheet reference -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
-<body class="mx-8 bg-gray-300">
-  <div id="google_translate_element" class="float-right m-2 pr-4 text-sm">Language Select</div>
-  <div class="flex flex-col min-h-screen">
-  <header>
-    <h1 class="text-center font-mono text-2xl notranslate">Hello World! I'm Yun Kisoo</h1>
-  </header>
-  <main class="flex-1">
-    <!-- About me -->
-    <section class="px-4 py-8">
-      <h2 class="text-xl font-bold mb-4 border-b pb-2">About Me</h2>
-      <p class="text-gray-700 leading-relaxed">
-        Engineer with 7+ years of experience in enterprise system migration and web platform development.<br>
-        Using Laravel Framework, AWS-based deployment in recently project.<br>
-        Interested in building stable, maintainable systems for solving complex business problems.
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <!-- Multi-language navigation bar -->
+      <div class="lang-switch">
+        <span class="active">English</span> |
+        <a href="./index_ko.html">한국어</a> |
+        <a href="./index_ja.html">日本語</a>
+      </div>
+
+      <span class="badge">7.5+ Years Experience · Senior Backend Engineer</span>
+      <h1>Yun Kisoo</h1>
+      <p class="hero-desc">
+        Senior Backend Engineer specializing in high-performance API core design, database optimization, and enterprise architecture modernization across South Korea and Japan. Focused on resilient distributed systems, sub-millisecond in-memory caching, and asynchronous documentation-driven execution (RFCs, ADRs).
       </p>
-    </section>
-    <!-- Skills -->
-    <section class="px-4 py-8 notranslate">
-      <h2 class="text-xl font-bold mb-4 border-b pb-2">Skills</h2>
-      <div class="flex flex-wrap gap-2 text-sm">
-        <span class="bg-gray-100 px-3 py-1 rounded-full">HTML5</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">CSS3</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Javascript</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Jquery</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">PHP</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Laravel Framework</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Visual Basic</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">ASP.NET</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">C++</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">C#</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Java</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Python</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">MySQL</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">MariaDB</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">PostgreSQL</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Oracle Database</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">AWS</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Linux</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Git</span>
+
+      <!-- Interactive Call to Action Links -->
+      <div class="nav-links">
+        <a href="https://github.com/CuriousSpace" target="_blank" class="btn btn-secondary">GitHub</a>
+        <a href="https://linkedin.com/in/[your-id]" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        <a href="./tools/websocket-tester/index-en.html" target="_blank" class="btn btn-primary">⚡ WebSocket Console Demo</a>
+        <a href="./assets/pdf/Resume_Kisoo_Yun_EN.pdf" download class="btn btn-secondary">Download CV (PDF)</a>
+      </div>
+    </header>
+
+    <!-- Key Performance Metrics Grid -->
+    <section>
+      <h2>Performance Metrics</h2>
+      <div class="metric-grid">
+        <div class="metric-card">
+          <div class="metric-value">95% Latency Cut</div>
+          <div class="metric-label">Dashboard log aggregation query tuning (2,000ms+ → 80ms)[cite: 5]</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">80%+ Reduction</div>
+          <div class="metric-label">Redundant external API traffic eliminated via Caffeine Local Cache[cite: 3, 5]</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">Zero Crashes</div>
+          <div class="metric-label">Unplanned downtime eliminated via Linux Swap & CloudWatch I/O triage[cite: 3, 5]</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">100% Integrity</div>
+          <div class="metric-label">Zero calculation discrepancy across mission-critical legacy migrations</div>
+        </div>
       </div>
     </section>
-    </section>
-    <!-- Certifications -->
-    <section class="px-4 py-8 notranslate">
-      <h2 class="text-xl font-bold mb-4 border-b pb-2">Certifications</h2>
-      <div class="flex flex-wrap gap-2 text-sm">
-        <span class="bg-gray-100 px-3 py-1 rounded-full">AWS Certified Cloud Practitioner</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">AWS Certified Solutions Architect - Associate</span>
+
+    <!-- Developer Productivity & Internal Tooling -->
+    <section>
+      <h2>Developer Productivity & Tooling</h2>
+      <div class="card">
+        <div class="card-title">WebSocket / STOMP Real-Time Debug Console</div>
+        <div class="card-meta">Internal browser-based QA and isolated socket validation tool[cite: 8, 11]</div>
+        <ul class="desc-list">
+          <li>Architected a standalone console allowing backend engineers to verify real-time channels independently of frontend delivery cycles[cite: 8, 11].</li>
+          <li>Supports both STOMP frames and Raw WebSocket, SockJS fallback, customizable reconnect intervals, and dynamic JSON header/body injection[cite: 8, 11, 12].</li>
+          <li>Implemented browser localStorage preset persistence to save and reload complex channel/header configurations instantly[cite: 11, 12].</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">WebSocket</span>
+          <span class="tag">STOMP</span>
+          <span class="tag">SockJS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Developer Tools</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">Local Model Context Protocol (MCP) Server</div>
+        <div class="card-meta">Cross-repository architectural indexing & exploration tool</div>
+        <ul class="desc-list">
+          <li>Constructed a local Model Context Protocol engine to index and cross-reference disparate enterprise repositories, drastically accelerating legacy comparison and feature parity verification.</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">MCP</span>
+          <span class="tag">Tooling</span>
+          <span class="tag">Automation</span>
+        </div>
       </div>
     </section>
-    <!-- Experience -->
-    <section class="px-4 py-8">
-      <h2 class="text-xl font-bold mb-4 border-b pb-2">Experience</h2>
-      <div class="mb-4">
-        <h3 class="font-semibold text-lg">Smart Social Co., Ltd. (2023.05 - Present)</h3>
-        <ul class="list-disc ml-5 text-gray-700 text-sm">
-          <li>Maintenance and enhancement of PHP-based education platform</li>
-          <li>Deploying services and configuring CI/CD in AWS environments</li>
-          <li>Oracle DB Linkage Relay Server Fixes and Security Improvements</li>
+
+    <!-- Professional Experience Section -->
+    <section>
+      <h2>Work Experience</h2>
+
+      <!-- Current Experience: Kangnam & Inconus -->
+      <div class="card">
+        <div class="card-title">Kangnam & Inconus Co., Ltd. | Senior Backend Engineer / R&D Lead</div>
+        <div class="card-meta">Sep 2025 – Present · Busan, South Korea[cite: 1]</div>
+        <ul class="desc-list">
+          <li>Spearheading backend core architecture and cloud infrastructure for an enterprise B2B safety management SaaS (KeepME v2)[cite: 1, 3].</li>
+          <li>Established a triple-hybrid persistence layer decoupling Spring Data JPA (CRUD), QueryDSL (dynamic filtering), and MyBatis (heavy aggregations)[cite: 4, 5].</li>
+          <li>Optimized raw-log aggregation bottlenecks via composite indexing and time-bucketing in MyBatis, reducing latency from 2,000ms+ down to 80ms[cite: 5].</li>
+          <li>Replaced commercial weather services with Korea Meteorological Administration public APIs and configured Caffeine Cache, slashing latency to &lt;5ms[cite: 3, 5].</li>
+          <li>Designed a 3-tier multi-tenant authorization engine (ReadScopeResolver) ensuring 100% data consistency across pagination boundaries[cite: 3, 5].</li>
+          <li>Architected a Transactional Outbox Pattern to decouple real-time alerts (FCM, Kakao AlimTalk, STOMP), preventing transaction rollbacks during network faults[cite: 3, 5].</li>
+          <li>Enforced statutory Location-Based Services (LBS) compliance by implementing DB-level AES-256 encryption and access audit logging[cite: 2, 3, 5].</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">Java 21</span>
+          <span class="tag">Spring Boot 3.4</span>
+          <span class="tag">MariaDB</span>
+          <span class="tag">QueryDSL</span>
+          <span class="tag">MyBatis</span>
+          <span class="tag">Caffeine</span>
+          <span class="tag">AWS SAA</span>
+        </div>
+      </div>
+
+      <!-- Previous Experience: Smart Social -->
+      <div class="card">
+        <div class="card-title">Smart Social Co., Ltd. | Senior Software Engineer</div>
+        <div class="card-meta">May 2023 – Aug 2025 · Busan, South Korea</div>
+        <ul class="desc-list">
+          <li>Overhauled localization architecture for education platform (da2um.kr) by replacing hardcoded templates with a unified Excel-driven dynamic rendering pipeline, reducing maintenance costs by ~90%.</li>
+          <li>Recovered blocked SSO middleware ports for University LINC 3.0 platform and established secure HTTPS/TLS encrypted communication.</li>
+          <li>Automated operational database schema extraction and bulk data ingestion (readExcel) using Python (Pandas/Openpyxl) over Bastion SSH port-forwarding[cite: 7].</li>
+          <li>Led feasibility and ROI analyses for third-party enterprise integrations (Canva, Slack API); instituted daily health-check routines.</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">PHP (Laravel)</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">AWS</span>
+        </div>
+      </div>
+
+      <!-- Previous Experience: AXAS Japan -->
+      <div class="card">
+        <div class="card-title">AXAS Co., Ltd. | Software Engineer</div>
+        <div class="card-meta">Apr 2019 – Apr 2023 · Osaka, Japan</div>
+        <ul class="desc-list">
+          <li>Reverse-engineered mission-critical railway station operation logic from COBOL to C# WinForms, ensuring modernized UI execution.</li>
+          <li>Migrated on-premise Delphi manufacturing management programs into intranet C# web systems, modernizing DAT file batch routines.</li>
+          <li>Conducted execution plan analysis across PostgreSQL and Google BigQuery for a nationwide electronics retailer, resolving query bottlenecks.</li>
+          <li>Authored comprehensive test specifications and regression suites, maintaining zero calculation discrepancies across platform transitions.</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">C# (.NET)</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Google BigQuery</span>
+          <span class="tag">Delphi</span>
+          <span class="tag">COBOL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section>
+      <h2>Certifications & Education</h2>
+      <div class="card">
+        <ul class="desc-list">
+          <li>AWS Certified Solutions Architect – Associate (AWS, 2025)</li>
+          <li>AWS Certified Cloud Practitioner (AWS, 2025)</li>
+          <li>Japanese Language Proficiency Test JLPT N1 (2025)</li>
+          <li>B.S. in Management Information Systems (MIS), Dong-eui University (2012.03 – 2019.02)</li>
         </ul>
       </div>
-      <div class="mb-4">
-        <h3 class="font-semibold text-lg">AXAS Co., Ltd. (Japan, 2019.03 - 2023.04)</h3>
-        <ul class="list-disc ml-5 text-gray-700 text-sm">
-          <li>Migration of internal systems of station staff</li>
-          <li>WEB conversion of manufacturing process management system</li>
-          <li>Internally based program design and development</li>
-        </ul>
-      </div>
     </section>
-    <!-- Projects -->
-    <section class="px-4 py-8">
-      <h2 class="text-xl font-bold mb-4 border-b pb-2">Projects</h2>
-
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Project Card 1 -->
-        <div class="bg-white p-4 rounded-lg shadow hover:shadow-md transition">
-          <h3 class="text-lg font-semibold mb-2">📌 LINC 3.0 Sharing and Collaboration Platform</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            A comprehensive support project for university-industry-academia-research cooperation promoted to create an industry-academia-research cooperation ecosystem in which universities and industries develop together.
-          </p>
-          <div class="text-sm text-blue-600 space-x-3">
-            <a href="https://lincshare.co.kr" target="_blank" class="underline">Site</a>
-            <a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&lev=0&statusYN=W&s=moe&m=020402&opType=N&boardSeq=90756" target="_blank" class="underline">Description</a>
-          </div>
-        </div>
-
-        <!-- Project Card 2 -->
-        <div class="bg-white p-4 rounded-lg shadow hover:shadow-md transition">
-          <h3 class="text-lg font-semibold mb-2">📌 HIVE 2 Busan Metropolitan City DX-Acardemy Consortium</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            This project is designed to support the role of a new middle-aged and older person career transition education institution (DX-Academy) in preparation for the digital transformation era by providing a level-based DX competency education course for digital transformation of regional specialized industries and a DX education course for employees tailored to the needs of regional industries through cooperation between vocational colleges and local autonomous governments.
-          </p>
-          <div class="text-sm text-blue-600 space-x-3">
-            <a href="https://busan.hive2.co.kr" target="_blank" class="underline">Site</a>
-            <a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=72761&boardSeq=91081&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020502&opType=N" target="_blank" class="underline">Description</a>
-          </div>
-        </div>
-
-        <!-- Project Card 3 -->
-        <div class="bg-white p-4 rounded-lg shadow hover:shadow-md transition">
-          <h3 class="text-lg font-semibold mb-2">📌 Multicultural Student Career Support Platform</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            An edutech-based career support platform that resolves various problems faced by multicultural students, such as career information imbalance, language barriers, and lack of mentors, through various channels.
-          </p>
-          <div class="text-sm text-blue-600 space-x-3">
-            <a href="https://www.da2um.kr" target="_blank" class="underline">Site</a>
-            <a href="https://news.zum.com/articles/99681405/다문화-학생-진로-지원-플랫폼-꿈이음-실증단-모집" target="_blank" class="underline">Press</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="text-center py-2 bg-inherit shadow notranslate">
-    <p>Powered by HTML5, tailwindcss, Javascript.</p>
-    <p>Copyright © 2025 Yun Kisoo. All rights reserved.</p>
-  </footer>
-</div>
-<script>
-function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            includedLanguages: 'ko,en,ja',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false,
-            googleDomain: 'translate.google.com'
-        }, 'google_translate_element');
-    }
-</script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script>
-</script>
+  </div>
 </body>
 </html>

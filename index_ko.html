@@ -1,144 +1,175 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/google_translate.css">
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4" integrity="sha256-Lfgh4c+xY/FqajT28Omn4hGTf0DE/vxSLDekfNrGA8M=" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-  <title>Engineer Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>윤기수 (Yun Kisoo) | 시니어 백엔드 엔지니어</title>
+  <!-- Global stylesheet reference -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
-<body class="mx-8 bg-gray-300">
-  <div id="google_translate_element" class="float-right m-2 pr-4 text-sm">Language Select</div>
-  <div class="flex flex-col min-h-screen">
-  <header>
-    <h1 class="text-center font-mono text-2xl notranslate">Hello World! 윤기수입니다.</h1>
-  </header>
-  <main class="flex-1">
-    <!-- About me -->
-    <section class="px-4 py-8">
-      <h2 class="text-xl font-bold mb-4 border-b pb-2">About Me</h2>
-      <p class="text-gray-700 leading-relaxed">
-        엔터프라이즈 시스템 마이그레이션 및 웹 플랫폼 개발 분야에서 7년 이상의 경력을 보유한 엔지니어입니다.<br>
-        Laravel 프레임워크를 사용하여 최근 프로젝트에서 AWS 기반 배포를 담당했습니다.<br>
-        복잡한 비즈니스 문제를 해결하기 위한 안정적이고 유지 관리가 가능한 시스템 구축에 관심이 있습니다.
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <!-- Multi-language navigation bar -->
+      <div class="lang-switch">
+        <a href="./index.html">English</a> |
+        <span class="active">한국어</span> |
+        <a href="./index_ja.html">日本語</a>
+      </div>
+
+      <span class="badge">7년 6개월 차 · 시니어 백엔드 엔지니어</span>
+      <h1>윤기수 (Yun Kisoo)</h1>
+      <p class="hero-desc">
+        대용량 쿼리 최적화, 멀티 테넌시 권한 격리 및 엔터프라이즈 레거시 현대화 전문 백엔드 엔지니어입니다. 한·일 양국의 복잡한 비즈니스 환경에서 분산 시스템 코어 API를 설계하고, 캐싱 및 클라우드 인프라 튜닝을 통해 무중단 가용성을 실천해 왔습니다. 문서 기반의 자율적인 비동기 협업(RFC, ADR, PR Review)을 지향합니다.
       </p>
-    </section>
-    <!-- Skills -->
-    <section class="px-4 py-8 notranslate">
-      <h2 class="text-xl font-bold mb-4 border-b pb-2">Skills</h2>
-      <div class="flex flex-wrap gap-2 text-sm">
-        <span class="bg-gray-100 px-3 py-1 rounded-full">HTML5</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">CSS3</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Javascript</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Jquery</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">PHP</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Laravel Framework</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Visual Basic</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">ASP.NET</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">C++</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">C#</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Java</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Python</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">MySQL</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">MariaDB</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">PostgreSQL</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Oracle Database</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">AWS</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Linux</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">Git</span>
+
+      <!-- Interactive Call to Action Links -->
+      <div class="nav-links">
+        <a href="https://github.com/CuriousSpace" target="_blank" class="btn btn-secondary">GitHub</a>
+        <a href="https://linkedin.com/in/[your-id]" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        <a href="./tools/websocket-tester/index-ko.html" target="_blank" class="btn btn-primary">⚡ WebSocket Console Demo</a>
+        <a href="./assets/pdf/경력기술서_윤기수_KO.pdf" download class="btn btn-secondary">경력기술서 다운로드 (PDF)</a>
+      </div>
+    </header>
+
+    <!-- Key Performance Metrics Grid -->
+    <section>
+      <h2>주요 성과 지표 (Performance Metrics)</h2>
+      <div class="metric-grid">
+        <div class="metric-card">
+          <div class="metric-value">95% 단축</div>
+          <div class="metric-label">대시보드 통계 집계 쿼리 최적화 (2,000ms+ → 80ms)[cite: 5]</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">80% 이상 절감</div>
+          <div class="metric-label">Caffeine 로컬 캐시 적용을 통한 외부 API 부하 방어[cite: 3, 5]</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">서버 다운 0건</div>
+          <div class="metric-label">스토리지 I/O 지연 분석 및 Linux Swap 증설로 OOM 방어[cite: 3, 5]</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">오차 0건 (100%)</div>
+          <div class="metric-label">COBOL/Delphi 레거시 마이그레이션 계산 및 비즈니스 무결성 보장</div>
+        </div>
       </div>
     </section>
-    </section>
-    <!-- Certifications -->
-    <section class="px-4 py-8 notranslate">
-      <h2 class="text-xl font-bold mb-4 border-b pb-2">Certifications</h2>
-      <div class="flex flex-wrap gap-2 text-sm">
-        <span class="bg-gray-100 px-3 py-1 rounded-full">AWS Certified Cloud Practitioner</span>
-        <span class="bg-gray-100 px-3 py-1 rounded-full">AWS Certified Solutions Architect - Associate</span>
+
+    <!-- Developer Productivity & Internal Tooling -->
+    <section>
+      <h2>개발자 생산성 및 내부 도구 (Developer Productivity & Tooling)</h2>
+      <div class="card">
+        <div class="card-title">WebSocket / STOMP 실시간 디버그 콘솔</div>
+        <div class="card-meta">프론트엔드 의존성 없는 독립형 백엔드 실시간 소켓 검증 웹 도구[cite: 8, 11]</div>
+        <ul class="desc-list">
+          <li>프론트엔드 화면 구현 전 백엔드 실시간 엔드포인트를 브라우저에서 직접 테스트하고 검증할 수 있는 디버깅 콘솔 개발[cite: 8, 11].</li>
+          <li>STOMP 프로토콜 및 Raw WebSocket 동시 지원, SockJS 폴백, 재연결 딜레이 및 동적 헤더/바디 JSON 주입 기능 구현[cite: 8, 11, 13].</li>
+          <li>자주 테스트하는 현장 및 패널 토픽 조합을 브라우저 로컬스토리지에 저장하고 불러오는 프리셋 관리 기능 내장[cite: 11, 13].</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">WebSocket</span>
+          <span class="tag">STOMP</span>
+          <span class="tag">SockJS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">QA Tools</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">로컬 Model Context Protocol (MCP) 서버</div>
+        <div class="card-meta">다중 사내 저장소 간 아키텍처 참조 및 코드 탐색 자동화 툴</div>
+        <ul class="desc-list">
+          <li>분산된 사내 레포지토리 간의 공통 기능과 도메인 구조를 효율적으로 비교·참조하기 위해 로컬 MCP 환경을 구축하여 코드 탐색 시간 단축.</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">MCP</span>
+          <span class="tag">Productivity</span>
+          <span class="tag">Automation</span>
+        </div>
       </div>
     </section>
-    <!-- Experience -->
-    <section class="px-4 py-8">
-      <h2 class="text-xl font-bold mb-4 border-b pb-2">Experience</h2>
-      <div class="mb-4">
-        <h3 class="font-semibold text-lg">Smart Social Co., Ltd. (2023.05 - Present)</h3>
-        <ul class="list-disc ml-5 text-gray-700 text-sm">
-          <li>PHP 기반 교육 플랫폼 유지보수 및 고도화</li>
-          <li>AWS 환경에서 서비스 배포 및 CI/CD 구성</li>
-          <li>AOracle DB 연동 중계 서버 수정 및 보안 개선</li>
+
+    <!-- Professional Experience Section -->
+    <section>
+      <h2>경력 사항 (Experience)</h2>
+
+      <!-- Current Experience: Kangnam & Inconus -->
+      <div class="card">
+        <div class="card-title">(주)강남앤인코누스 | 플랫폼개발팀 전임연구원</div>
+        <div class="card-meta">2025.09 ~ 현재 재직 중 · 부산[cite: 1]</div>
+        <ul class="desc-list">
+          <li>Java 21, Spring Boot 3.4 기반 B2B 스마트 안전 SaaS 플랫폼 코어 API 설계 및 백엔드 개발 전담[cite: 1, 3].</li>
+          <li>Spring Data JPA(단순 CRUD), QueryDSL(동적 검색), MyBatis(대용량 집계)의 트리플 하이브리드 영속성 분리 아키텍처 구축[cite: 4, 5].</li>
+          <li>원시 로그 전수 스캔 집계 쿼리를 복합 인덱스 및 시간대별 버킷팅 MyBatis 쿼리로 재설계하여 로딩 지연 95% 단축 (2,000ms+ → 80ms)[cite: 5].</li>
+          <li>해외 유료 기상 API를 기상청 공공 API로 전환하고 10~30분 TTL Caffeine 캐시를 적용하여 외부 호출 80% 절감 및 지연 시간 5ms 이내 달성[cite: 3, 5].</li>
+          <li>3계층(발주처-시공사-협력사) 멀티 테넌시 권한 격리 엔진(ReadScopeResolver) 개발로 목록 및 totalCount 데이터 정합성 100% 보장[cite: 3, 5].</li>
+          <li>Transactional Outbox Pattern 도입으로 외부 위험 알림(FCM, 알림톡, STOMP) 장애 시 메인 비즈니스 트랜잭션 롤백 차단[cite: 3, 5].</li>
+          <li>방통위 위치기반서비스(LBS) 사업자 인허가 대응: GPS 좌표 DB AES-256 암호화 및 법적 감사대장/접근사실 로깅 파이프라인 구축[cite: 2, 3, 5].</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">Java 21</span>
+          <span class="tag">Spring Boot 3.4</span>
+          <span class="tag">MariaDB</span>
+          <span class="tag">QueryDSL</span>
+          <span class="tag">MyBatis</span>
+          <span class="tag">Caffeine</span>
+          <span class="tag">AWS SAA</span>
+        </div>
+      </div>
+
+      <!-- Previous Experience: Smart Social -->
+      <div class="card">
+        <div class="card-title">(주)스마트소셜 | 서비스기획개발팀 선임</div>
+        <div class="card-meta">2023.05 ~ 2025.08 (2년 4개월) · 부산</div>
+        <ul class="desc-list">
+          <li>다문화 학생 진로 플랫폼(da2um.kr): 엑셀 번역 데이터 기반의 단일 템플릿 동적 렌더링 파이프라인 구축 (프론트엔드 유지보수 공수 약 90% 절감).</li>
+          <li>대학 LINC 3.0 플랫폼: 상위 기관 보안 점검으로 차단된 SSO 중계서버(Spring Boot) 포트 긴급 복구 및 HTTPS/TLS 보안 통신 적용.</li>
+          <li>Bastion SSH 환경에서 Python(venv, Pandas, Openpyxl) 기반 운영 DB 스키마 자동 추출 및 대량 엑셀 데이터 DB 적재 스크립트(readExcel) 자체 구축 운영[cite: 7].</li>
+          <li>Canva, Slack Enterprise API 등 서드파티 도입 사전 기술 타당성 및 라이선스 비용 분석, 일일 프로덕션 헬스체크 프로세스 운용.</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">PHP (Laravel)</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">AWS</span>
+        </div>
+      </div>
+
+      <!-- Previous Experience: AXAS Japan -->
+      <div class="card">
+        <div class="card-title">AXAS 주식회사 (일본 오사카) | 제2엔지니어링 사원</div>
+        <div class="card-meta">2019.04 ~ 2023.04 (4년 1개월) · 일본 오사카</div>
+        <ul class="desc-list">
+          <li>철도 역무원 내부 시스템: COBOL 레거시 업무 로직을 C# WinForms 시스템으로 리버스 엔지니어링 마이그레이션.</li>
+          <li>금속공업 공정 관리 시스템: Delphi 기반 온프레미스 프로그램을 사내 인트라넷 C# 웹 시스템으로 전환 및 DAT 파일 배치 처리 개선.</li>
+          <li>전국 대형 가전양판점 유통 데이터 파이프라인: PostgreSQL 및 Google BigQuery 쿼리 실행계획(Execution Plan) 분석 기반 대용량 배치 튜닝.</li>
+          <li>마이그레이션 단계별 상세 테스트 사양서 수립 및 회귀 테스트 운용으로 언어 전환 전후 비즈니스 계산 오차 0건 무결성 확보.</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">C# (.NET)</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Google BigQuery</span>
+          <span class="tag">Delphi</span>
+          <span class="tag">COBOL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section>
+      <h2>자격 및 학력 (Certifications & Education)</h2>
+      <div class="card">
+        <ul class="desc-list">
+          <li>AWS Certified Solutions Architect – Associate (AWS, 2025.05)</li>
+          <li>AWS Certified Cloud Practitioner (AWS, 2025.04)</li>
+          <li>일본어능력시험 JLPT N1급 (2025.08)</li>
+          <li>동의대학교 경영정보학과 학사 졸업 (2012.03 ~ 2019.02)</li>
         </ul>
       </div>
-      <div class="mb-4">
-        <h3 class="font-semibold text-lg">AXAS Co., Ltd. (Japan, 2019.03 - 2023.04)</h3>
-        <ul class="list-disc ml-5 text-gray-700 text-sm">
-          <li>역무원 내부 시스템의 마이그레이션</li>
-          <li>제조사 공정 관리 시스템의 WEB 전환</li>
-          <li>내부 기반 프로그램 설계 및 개발</li>
-        </ul>
-      </div>
     </section>
-    <!-- Projects -->
-    <section class="px-4 py-8">
-      <h2 class="text-xl font-bold mb-4 border-b pb-2">Projects</h2>
-
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <!-- Project Card 1 -->
-        <div class="bg-white p-4 rounded-lg shadow hover:shadow-md transition">
-          <h3 class="text-lg font-semibold mb-2">📌 LINC 3.0 공유ㆍ협업 플랫폼</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            대학과 산업계가 상생 발전하는 산학연협력 생태계를 조성하기 위해 추진되는 대학 산학연협력 종합지원 사업.
-          </p>
-          <div class="text-sm text-blue-600 space-x-3">
-            <a href="https://lincshare.co.kr" target="_blank" class="underline">Site</a>
-            <a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=294&lev=0&statusYN=W&s=moe&m=020402&opType=N&boardSeq=90756" target="_blank" class="underline">Description</a>
-          </div>
-        </div>
-
-        <!-- Project Card 2 -->
-        <div class="bg-white p-4 rounded-lg shadow hover:shadow-md transition">
-          <h3 class="text-lg font-semibold mb-2">📌 HIVE 2 부산광역시 DX-Acardemy 컨소시엄</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            전문대학이 광역자치단체와 협력하여 지역특화산업의 디지털 전환을 위한 수준별 DX역량 교육과정 및 지역 산업체 수요 맞춤형 재직자 DX교육과정을 제공하여, 디지털 전환 시대를 대비한 新중장년의 직업전환교육기관(DX-Academy) 역할 수행을 지원하고자 기획된 사업.
-          </p>
-          <div class="text-sm text-blue-600 space-x-3">
-            <a href="https://busan.hive2.co.kr" target="_blank" class="underline">Site</a>
-            <a href="https://www.moe.go.kr/boardCnts/viewRenew.do?boardID=72761&boardSeq=91081&lev=0&searchType=null&statusYN=W&page=1&s=moe&m=020502&opType=N" target="_blank" class="underline">Description</a>
-          </div>
-        </div>
-
-        <!-- Project Card 3 -->
-        <div class="bg-white p-4 rounded-lg shadow hover:shadow-md transition">
-          <h3 class="text-lg font-semibold mb-2">📌 다문화 학생 진로 지원 플랫폼</h3>
-          <p class="text-gray-600 text-sm mb-4">
-            진로 정보 불균형, 언어 장벽, 멘토 부족 등 다문화 학생이 겪고 있는 여러 문제를 다양한 경로로 해소해주는 에듀테크 기반 진로 지원 플랫폼.
-          </p>
-          <div class="text-sm text-blue-600 space-x-3">
-            <a href="https://www.da2um.kr" target="_blank" class="underline">Site</a>
-            <a href="https://news.zum.com/articles/99681405/다문화-학생-진로-지원-플랫폼-꿈이음-실증단-모집" target="_blank" class="underline">Press</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="text-center py-2 bg-inherit shadow notranslate">
-    <p>Powered by HTML5, tailwindcss, Javascript.</p>
-    <p>Copyright © 2025 Yun Kisoo. All rights reserved.</p>
-  </footer>
-</div>
-<script>
-function googleTranslateElementInit() {
-        new google.translate.TranslateElement({
-            pageLanguage: 'ko',
-            includedLanguages: 'ko,en,ja',
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            autoDisplay: false,
-            googleDomain: 'translate.google.com'
-        }, 'google_translate_element');
-    }
-</script>
-<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<script>
-</script>
+  </div>
 </body>
 </html>

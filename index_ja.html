@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ユン・ギス (Yun Kisoo) | シニアバックエンドエンジニア</title>
+  <!-- Global stylesheet reference -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <!-- Multi-language navigation bar -->
+      <div class="lang-switch">
+        <a href="./index.html">English</a> |
+        <a href="./index_ko.html">한국어</a> |
+        <span class="active">日本語</span>
+      </div>
+
+      <span class="badge">実務7年6ヶ月 · シニアバックエンドエンジニア</span>
+      <h1>ユン・ギス (Yun Kisoo)</h1>
+      <p class="hero-desc">
+        大規模クエリ最適化、マルチテナント権限分離、ミッションクリティカルなレガシー刷新を強みとするバックエンドエンジニアです。大阪での4年間のエンタープライズSI実績と、韓国でのB2B SaaSコアアーキテクチャ設計経験を兼ね備えています。文書化（RFC, ADR, PRレビュー）を軸とした自律的な非同期コラボレーションを重視し、高可用性インフラ運用を実現します。
+      </p>
+
+      <!-- Interactive Call to Action Links -->
+      <div class="nav-links">
+        <a href="https://github.com/CuriousSpace" target="_blank" class="btn btn-secondary">GitHub</a>
+        <a href="https://linkedin.com/in/[your-id]" target="_blank" class="btn btn-secondary">LinkedIn</a>
+        <a href="./tools/websocket-tester/index-en.html" target="_blank" class="btn btn-primary">⚡ WebSocket Console Demo</a>
+        <a href="./assets/pdf/職務経歴書_ユンギス_JA.pdf" download class="btn btn-secondary">職務経歴書ダウンロード (PDF)</a>
+      </div>
+    </header>
+
+    <!-- Key Performance Metrics Grid -->
+    <section>
+      <h2>主要実績メトリクス (Performance Metrics)</h2>
+      <div class="metric-grid">
+        <div class="metric-card">
+          <div class="metric-value">95% 削減</div>
+          <div class="metric-label">ダッシュボード集計クエリ最適化（2,000ms+ → 80ms）[cite: 5]</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">80% 以上削減</div>
+          <div class="metric-label">Caffeineローカルキャッシュ適用による外部API通信負荷軽減[cite: 3, 5]</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">障害 0件</div>
+          <div class="metric-label">Linux Swap増設およびI/O解析によるOOMサーバーダウン完全防止[cite: 3, 5]</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">100% 整合性</div>
+          <div class="metric-label">COBOL/Delphiレガシー移行における計算誤差ゼロ達成</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Developer Productivity & Internal Tooling -->
+    <section>
+      <h2>開発者生産性および内部ツール (Developer Productivity & Tooling)</h2>
+      <div class="card">
+        <div class="card-title">WebSocket / STOMP リアルタイムデバッグコンソール</div>
+        <div class="card-meta">フロントエンド非依存の単体リアルタイム通信検証用Webツール[cite: 8, 11]</div>
+        <ul class="desc-list">
+          <li>フロントエンドの実装進捗に依存せず、バックエンド単体でリアルタイムソケット疎通・検証を行えるブラウザベースのコンソールを独自開発[cite: 8, 11]。</li>
+          <li>STOMPプロトコルおよびRaw WebSocket双方への対応、SockJSフォールバック、再接続ディレイ、カスタムJSONヘッダー/ボディ動的送信機能を実装[cite: 8, 11, 12]。</li>
+          <li>頻繁に使用する現場や電光掲示板トピック設定をブラウザのLocalStorageに保存・読込できるプリセット管理機能を内蔵[cite: 11, 12]。</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">WebSocket</span>
+          <span class="tag">STOMP</span>
+          <span class="tag">SockJS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">QA Tools</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">ローカル Model Context Protocol (MCP) サーバー</div>
+        <div class="card-meta">複数リポジトリ横断の機能参照・コード探索自動化ツール</div>
+        <ul class="desc-list">
+          <li>社内に分散された複数リポジトリ（新バージョンAPI、旧管理サーバーなど）間の共通機能やドメイン構造を効率的に比較・参照するためのローカルMCP環境を構築し、設計調査工数を短縮。</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">MCP</span>
+          <span class="tag">Productivity</span>
+          <span class="tag">Automation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience Section -->
+    <section>
+      <h2>職務経歴 (Experience)</h2>
+
+      <!-- Current Experience: Kangnam & Inconus -->
+      <div class="card">
+        <div class="card-title">株式会社 カンナム＆インコヌス | プラットフォーム開発チーム 主任研究員</div>
+        <div class="card-meta">2025.09 ～ 現在在職中 · 韓国 釜山[cite: 1]</div>
+        <ul class="desc-list">
+          <li>Java 21 / Spring Boot 3.4ベースのB2Bスマート安全管理SaaS（KeepME v2）のコアAPI設計およびバックエンド開発を統括[cite: 1, 3]。</li>
+          <li>Spring Data JPA（単純CRUD）、QueryDSL（動的検索）、MyBatis（大量集計）の3層ハイブリッド永続化アーキテクチャを確立[cite: 4, 5]。</li>
+          <li>生ログ全件スキャン方式を複合インデックスおよび時間帯バケット集計の専用MyBatisクエリへ再設計し、ダッシュボード応答時間を95%短縮（2,000ms+ → 80ms）[cite: 5]。</li>
+          <li>海外有料気象APIを韓国気象庁の公共データAPIへ移行し、TTL 10〜30分のCaffeine Local Cacheを適用することで外部呼び出しを80%以上削減、5ms以内の高速応答を実現[cite: 3, 5]。</li>
+          <li>発注者・元請・下請の3階層組織データを厳格に分離する認可エンジン（ReadScopeResolver）を開発し、一覧とページング総数（totalCount）の整合性を100%保証[cite: 3, 5]。</li>
+          <li>Transactional Outboxパターンを導入し、外部危険通知（FCM、カカオ通知トーク、STOMP）通信障害時におけるメインビジネストランザクションの巻き戻りを防止[cite: 3, 5]。</li>
+          <li>位置情報サービス（LBS）事業許認可への対応：GPS座標のDBレベルAES-256暗号化、アクセス監査ログ追跡パイプラインを構築[cite: 2, 3, 5]。</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">Java 21</span>
+          <span class="tag">Spring Boot 3.4</span>
+          <span class="tag">MariaDB</span>
+          <span class="tag">QueryDSL</span>
+          <span class="tag">MyBatis</span>
+          <span class="tag">Caffeine</span>
+          <span class="tag">AWS SAA</span>
+        </div>
+      </div>
+
+      <!-- Previous Experience: Smart Social -->
+      <div class="card">
+        <div class="card-title">株式会社 スマートソーシャル | サービス企画開発チーム リード（主任）</div>
+        <div class="card-meta">2023.05 ～ 2025.08 (2年4ヶ月) · 韓国 釜山</div>
+        <ul class="desc-list">
+          <li>多文化生徒向け進路支援プラットフォーム（da2um.kr）：言語ごとにハードコードされていた画面構成を刷新し、Excel翻訳データ連動型の単一テンプレート動的レンダリング基盤を構築（保守工数を約90%削減）。</li>
+          <li>大学産学連携プラットフォーム（LINC 3.0）：上位機関のセキュリティ検査に伴うSSO中継サーバー（Spring Boot）ポート遮断障害に対し、迅速な代替ポート割り当ておよびHTTPS/TLS暗号化通信を再構築してサービスを復旧。</li>
+          <li>Bastion SSHポートフォワーディング環境下において、Python（venv, Pandas, Openpyxl）による本番DBスキーマ自動抽出および大量データ自動投入スクリプト（readExcel）を内製化[cite: 7]。</li>
+          <li>Canva、Slack Enterprise APIなど外部サードパーティツールの導入妥当性・ライセンス費用分析（ROI）、デイリーヘルスチェック体制を運用。</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">PHP (Laravel)</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Python</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">AWS</span>
+        </div>
+      </div>
+
+      <!-- Previous Experience: AXAS Japan -->
+      <div class="card">
+        <div class="card-title">アクサス 株式会社 | 第2エンジニアリング部</div>
+        <div class="card-meta">2019.04 ～ 2023.04 (4年1ヶ月) · 日本 大阪</div>
+        <ul class="desc-list">
+          <li>鉄道駅務内部システム刷新：COBOLで構築された基幹業務ロジックをリバースエンジニアリングし、C# WinFormsシステムへマイグレーション。</li>
+          <li>金属工業工程管理システムWEB化：Delphi製オンプレミスプログラムを社内イントラネットC# Webシステムへ移行、ストアドプロシージャおよびDATファイルバッチ処理ルーチンを刷新。</li>
+          <li>大手家電量販店流通データチューニング：PostgreSQLおよびGoogle BigQueryのクエリ実行計画（Execution Plan）分析に基づく不要インデックススキャン・結合処理の改善。</li>
+          <li>段階的なテスト仕様書の策定および回帰テスト体制の徹底運用により、言語移行前後で計算誤差0件・ビジネスロジックの完全な無矛盾性を担保。</li>
+        </ul>
+        <div class="tag-group">
+          <span class="tag">C# (.NET)</span>
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">Google BigQuery</span>
+          <span class="tag">Delphi</span>
+          <span class="tag">COBOL</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Certifications Section -->
+    <section>
+      <h2>保有資格および学歴 (Certifications & Education)</h2>
+      <div class="card">
+        <ul class="desc-list">
+          <li>AWS Certified Solutions Architect – Associate (AWS, 2025.05)</li>
+          <li>AWS Certified Cloud Practitioner (AWS, 2025.04)</li>
+          <li>日本語能力試験 JLPT N1級 合格 (2025.08)</li>
+          <li>東義大学校 経営情報学科 学士卒業 (2012.03 ～ 2019.02)</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
