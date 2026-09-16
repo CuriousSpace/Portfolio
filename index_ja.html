@@ -21,7 +21,7 @@
       <span class="badge">実務7年6ヶ月 · シニアバックエンドエンジニア</span>
       <h1>ユン・ギス (Yun Kisoo)</h1>
       <p class="hero-desc">
-        大規模クエリ最適化、マルチテナント権限分離、ミッションクリティカルなレガシー刷新を強みとするバックエンドエンジニアです。大阪での4年間のエンタープライズSI実績と、韓国でのB2B SaaSコアアーキテクチャ設計経験を兼ね備えています。文書化（RFC, ADR, PRレビュー）を軸とした自律的な非同期コラボレーションを重視し、高可用性インフラ運用を実現します。
+        大規模クエリ最適化、マルチテナント権限分離、ミッションクリティカルなレガシー刷新を強みとするバックエンドエンジニアです。大阪での4年間のエンタープライズSI実績と、韓国でのB2B SaaSコアアーキテクチャ設計経験を兼ね備えています。文書化を軸とした自律的な非同期コラボレーションを重視し、高可用性インフラ運用を実現します。
       </p>
 
       <!-- Interactive Call to Action Links -->
@@ -39,15 +39,15 @@
       <div class="metric-grid">
         <div class="metric-card">
           <div class="metric-value">95% 削減</div>
-          <div class="metric-label">ダッシュボード集計クエリ最適化（2,000ms+ → 80ms）[cite: 5]</div>
+          <div class="metric-label">ダッシュボード集計クエリ最適化（2,000ms+ → 80ms）</div>
         </div>
         <div class="metric-card">
           <div class="metric-value">80% 以上削減</div>
-          <div class="metric-label">Caffeineローカルキャッシュ適用による外部API通信負荷軽減[cite: 3, 5]</div>
+          <div class="metric-label">Caffeineローカルキャッシュ適用による外部API通信負荷軽減</div>
         </div>
         <div class="metric-card">
           <div class="metric-value">障害 0件</div>
-          <div class="metric-label">Linux Swap増設およびI/O解析によるOOMサーバーダウン完全防止[cite: 3, 5]</div>
+          <div class="metric-label">Linux Swap増設およびI/O解析によるOOMサーバーダウン完全防止</div>
         </div>
         <div class="metric-card">
           <div class="metric-value">100% 整合性</div>
@@ -61,11 +61,11 @@
       <h2>開発者生産性および内部ツール (Developer Productivity & Tooling)</h2>
       <div class="card">
         <div class="card-title">WebSocket / STOMP リアルタイムデバッグコンソール</div>
-        <div class="card-meta">フロントエンド非依存の単体リアルタイム通信検証用Webツール[cite: 8, 11]</div>
+        <div class="card-meta">フロントエンド非依存の単体リアルタイム通信検証用Webツール</div>
         <ul class="desc-list">
-          <li>フロントエンドの実装進捗に依存せず、バックエンド単体でリアルタイムソケット疎通・検証を行えるブラウザベースのコンソールを独自開発[cite: 8, 11]。</li>
-          <li>STOMPプロトコルおよびRaw WebSocket双方への対応、SockJSフォールバック、再接続ディレイ、カスタムJSONヘッダー/ボディ動的送信機能を実装[cite: 8, 11, 12]。</li>
-          <li>頻繁に使用する現場や電光掲示板トピック設定をブラウザのLocalStorageに保存・読込できるプリセット管理機能を内蔵[cite: 11, 12]。</li>
+          <li>フロントエンドの実装進捗に依存せず、バックエンド単体でリアルタイムソケット疎通・検証を行えるブラウザベースのコンソールを独自開発。</li>
+          <li>STOMPプロトコルおよびRaw WebSocket双方への対応、SockJSフォールバック、再接続ディレイ、カスタムJSONヘッダー/ボディ動的送信機能を実装。</li>
+          <li>頻繁に使用する現場や電光掲示板トピック設定をブラウザのLocalStorageに保存・読込できるプリセット管理機能を内蔵。</li>
         </ul>
         <div class="tag-group">
           <span class="tag">WebSocket</span>
@@ -97,15 +97,15 @@
       <!-- Current Experience: Kangnam & Inconus -->
       <div class="card">
         <div class="card-title">株式会社 カンナム＆インコヌス | プラットフォーム開発チーム 主任研究員</div>
-        <div class="card-meta">2025.09 ～ 現在在職中 · 韓国 釜山[cite: 1]</div>
+        <div class="card-meta">2025.09 ～ 現在在職中 · 韓国 釜山</div>
         <ul class="desc-list">
-          <li>Java 21 / Spring Boot 3.4ベースのB2Bスマート安全管理SaaS（KeepME v2）のコアAPI設計およびバックエンド開発を統括[cite: 1, 3]。</li>
-          <li>Spring Data JPA（単純CRUD）、QueryDSL（動的検索）、MyBatis（大量集計）の3層ハイブリッド永続化アーキテクチャを確立[cite: 4, 5]。</li>
-          <li>生ログ全件スキャン方式を複合インデックスおよび時間帯バケット集計の専用MyBatisクエリへ再設計し、ダッシュボード応答時間を95%短縮（2,000ms+ → 80ms）[cite: 5]。</li>
-          <li>海外有料気象APIを韓国気象庁の公共データAPIへ移行し、TTL 10〜30分のCaffeine Local Cacheを適用することで外部呼び出しを80%以上削減、5ms以内の高速応答を実現[cite: 3, 5]。</li>
-          <li>発注者・元請・下請の3階層組織データを厳格に分離する認可エンジン（ReadScopeResolver）を開発し、一覧とページング総数（totalCount）の整合性を100%保証[cite: 3, 5]。</li>
-          <li>Transactional Outboxパターンを導入し、外部危険通知（FCM、カカオ通知トーク、STOMP）通信障害時におけるメインビジネストランザクションの巻き戻りを防止[cite: 3, 5]。</li>
-          <li>位置情報サービス（LBS）事業許認可への対応：GPS座標のDBレベルAES-256暗号化、アクセス監査ログ追跡パイプラインを構築[cite: 2, 3, 5]。</li>
+          <li>Java 21 / Spring Boot 3.4ベースのB2Bスマート安全管理SaaS（KeepME v2）のコアAPI設計およびバックエンド開発を統括。</li>
+          <li>Spring Data JPA（単純CRUD）、QueryDSL（動的検索）、MyBatis（大量集計）の3層ハイブリッド永続化アーキテクチャを確立。</li>
+          <li>生ログ全件スキャン方式を複合インデックスおよび時間帯バケット集計の専用MyBatisクエリへ再設計し、ダッシュボード応答時間を95%短縮（2,000ms+ → 80ms）。</li>
+          <li>海外有料気象APIを韓国気象庁の公共データAPIへ移行し、TTL 10〜30分のCaffeine Local Cacheを適用することで外部呼び出しを80%以上削減、5ms以内の高速応答を実現。</li>
+          <li>発注者・元請・下請の3階層組織データを厳格に分離する認可エンジン（ReadScopeResolver）を開発し、一覧とページング総数（totalCount）の整合性を100%保証。</li>
+          <li>Transactional Outboxパターンを導入し、外部危険通知（FCM、カカオ通知トーク、STOMP）通信障害時におけるメインビジネストランザクションの巻き戻りを防止。</li>
+          <li>位置情報サービス（LBS）事業許認可への対応：GPS座標のDBレベルAES-256暗号化、アクセス監査ログ追跡パイプラインを構築。</li>
         </ul>
         <div class="tag-group">
           <span class="tag">Java 21</span>
@@ -125,7 +125,7 @@
         <ul class="desc-list">
           <li>多文化生徒向け進路支援プラットフォーム（da2um.kr）：言語ごとにハードコードされていた画面構成を刷新し、Excel翻訳データ連動型の単一テンプレート動的レンダリング基盤を構築（保守工数を約90%削減）。</li>
           <li>大学産学連携プラットフォーム（LINC 3.0）：上位機関のセキュリティ検査に伴うSSO中継サーバー（Spring Boot）ポート遮断障害に対し、迅速な代替ポート割り当ておよびHTTPS/TLS暗号化通信を再構築してサービスを復旧。</li>
-          <li>Bastion SSHポートフォワーディング環境下において、Python（venv, Pandas, Openpyxl）による本番DBスキーマ自動抽出および大量データ自動投入スクリプト（readExcel）を内製化[cite: 7]。</li>
+          <li>Bastion SSHポートフォワーディング環境下において、Python（venv, Pandas, Openpyxl）による本番DBスキーマ自動抽出および大量データ自動投入スクリプト（readExcel）を内製化。</li>
           <li>Canva、Slack Enterprise APIなど外部サードパーティツールの導入妥当性・ライセンス費用分析（ROI）、デイリーヘルスチェック体制を運用。</li>
         </ul>
         <div class="tag-group">
