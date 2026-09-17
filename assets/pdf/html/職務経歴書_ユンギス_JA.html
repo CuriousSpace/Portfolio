@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>職務経歴書_ユンギス_JA</title>
+<style>
+  @page {
+    size: A4;
+    margin: 13mm 16mm 13mm 16mm;
+    @bottom-right {
+      content: counter(page) " / " counter(pages);
+      font-size: 8pt;
+      color: #94a3b8;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Meiryo", sans-serif;
+    }
+  }
+  *, *:before, *:after { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", "Noto Sans JP", sans-serif;
+    color: #1e293b;
+    font-size: 8.8pt;
+    line-height: 1.42;
+    margin: 0;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 1.5px solid #0284c7;
+    padding-bottom: 6px;
+  }
+  h1 {
+    font-size: 19pt;
+    margin: 0 0 4px 0;
+    color: #0f172a;
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+  .contact-bar {
+    font-size: 8.4pt;
+    color: #475569;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .contact-bar a {
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .section-title {
+    font-size: 10.2pt;
+    font-weight: 800;
+    color: #0f172a;
+    border-bottom: 1px solid #cbd5e1;
+    padding-bottom: 2.5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px;
+  }
+  .summary-text {
+    font-size: 8.6pt;
+    color: #334155;
+    text-align: justify;
+    line-height: 1.4;
+    margin-bottom: 6px;
+  }
+  .skills-table {
+    width: 100%;
+    margin-bottom: 6px;
+    font-size: 8.5pt;
+    border-collapse: collapse;
+  }
+  .skills-table td {
+    padding: 1.8px 0;
+    vertical-align: top;
+  }
+  .skills-table td.cat {
+    width: 25%;
+    font-weight: 700;
+    color: #0f172a;
+  }
+  .skills-table td.val {
+    width: 75%;
+    color: #334155;
+  }
+  .summary-list {
+    margin: 0 0 6px 0;
+    padding-left: 15px;
+  }
+  .summary-list li {
+    font-size: 8.6pt;
+    color: #334155;
+    margin-bottom: 2.5px;
+    line-height: 1.38;
+  }
+  .summary-list li strong {
+    color: #0f172a;
+  }
+  .company-block {
+    margin-bottom: 10px;
+  }
+  .company-header {
+    background: #f8fafc;
+    border-left: 3.5px solid #0284c7;
+    padding: 4px 8px;
+    margin-top: 6px;
+    margin-bottom: 5px;
+    display: table;
+    width: 100%;
+  }
+  .company-name {
+    display: table-cell;
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #0f172a;
+    vertical-align: middle;
+  }
+  .company-meta {
+    display: table-cell;
+    text-align: right;
+    font-size: 8.3pt;
+    color: #64748b;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  .project-title {
+    font-size: 9pt;
+    font-weight: 700;
+    color: #0369a1;
+    margin-bottom: 2px;
+  }
+  .project-env {
+    font-size: 8.3pt;
+    color: #64748b;
+    margin-top: 4px;
+    margin-bottom: 2px;
+  }
+  ul.bullets {
+    margin: 2px 0 0 0;
+    padding-left: 14px;
+  }
+  ul.bullets li {
+    font-size: 8.5pt;
+    color: #334155;
+    margin-bottom: 2.8px;
+    line-height: 1.38;
+    text-align: justify;
+  }
+  ul.bullets li strong {
+    color: #0f172a;
+    font-weight: 600;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+</style>
+</head>
+<body>
+
+  <!-- ==================== PAGE 1 ==================== -->
+  <div class="header">
+    <h1>職 務 経 歴 書</h1>
+    <div class="contact-bar">
+      <span><strong>氏名：</strong>ユン・ギス (YUN KISOO)</span> &bull;
+      <span><strong>日付：</strong>2026年 9月 現在</span> &bull;
+      <a href="https://github.com/CuriousSpace" style="display:none">GitHub</a> <!-- &bull; -->
+      <a href="https://curiousspace.github.io/Portfolio/index_ja.html">ポートフォリオ</a>
+    </div>
+  </div>
+
+  <div class="section-title">■ 職務要約 (Executive Summary)</div>
+  <div class="summary-text">
+    大学卒業後、日本のIT企業（大阪）にて4年1ヶ月間、鉄道駅務システムや金属工業の工程管理システムなど、エンタープライズ領域におけるミッションクリティカルなレガシー刷新（COBOL/Delphi &rarr; C#/.NET）およびPostgreSQL/BigQueryのクエリ実行計画チューニングを担当しました。<br>
+    帰国後はB2B SaaSプラットフォームのバックエンドリードとして、Java 21 / Spring Boot 3.4およびAWS環境を用いた高可用性アーキテクチャ設計、大規模集計クエリ最適化（レイテンシ95%削減）、Caffeineキャッシュ導入、マルチテナント権限分離エンジン開発を主導しました。完全リモート環境における自律的なドキュメント駆動開発（RFC, ADR, PRレビュー）を通じて高品質なシステム構築を推進します。
+  </div>
+
+  <div class="section-title">■ 活かせる経験・知識・技術 (Core Strengths)</div>
+  <ul class="summary-list">
+    <li><strong>大規模DBクエリ最適化：</strong>複合インデックス、時間帯バケット集計、実行計画解析（レイテンシ95%削減、2,000ms+ &rarr; 80ms）。</li>
+    <li><strong>レガシーモダナイゼーション：</strong>COBOL、DelphiからC#/.NET Webシステムへのリバースエンジニアリング・移行（計算誤差0件保証）。</li>
+    <li><strong>マルチテナント認可アーキテクチャ：</strong>3階層（発注者・元請・下請）組織データの厳格な分離およびデータ整合性100%担保エンジンの設計。</li>
+    <li><strong>非同期高信頼性アーキテクチャ：</strong>Transactional Outboxパターンによる外部通信障害遮断、WebSocket/STOMPリアルタイム通信。</li>
+    <li><strong>AWSインフラ運用監視（SAA保有）：</strong>CloudWatchメトリクス解析に基づくOOMトラブルシューティング、Linux Swap（2GB）チューニング。</li>
+    <li><strong>高い日本語コミュニケーション力：</strong>ビジネスレベル（JLPT N1、日本現地でのSE実務4年以上）。</li>
+  </ul>
+
+  <div class="section-title">■ 主な技術スタック (Technical Toolkit)</div>
+  <table class="skills-table">
+    <tr>
+      <td class="cat">言語 (Languages)</td>
+      <td class="val">Java (21), C# (.NET Core, WinForms), PHP, Python, SQL, JavaScript</td>
+    </tr>
+    <tr>
+      <td class="cat">フレームワーク</td>
+      <td class="val">Spring Boot 3.4, Spring Security, Spring Data JPA, QueryDSL, MyBatis, ASP.NET Core, Laravel</td>
+    </tr>
+    <tr>
+      <td class="cat">DB &amp; キャッシュ</td>
+      <td class="val">MariaDB, MySQL, PostgreSQL, Google BigQuery, Caffeine Cache</td>
+    </tr>
+    <tr>
+      <td class="cat">クラウド &amp; インフラ</td>
+      <td class="val">AWS (EC2, RDS, S3, CloudFront, Athena, CloudWatch, EB), Docker, Nginx, GitHub Actions</td>
+    </tr>
+  </table>
+
+  <div class="section-title">■ 職務経歴詳細 (Work Experience)</div>
+
+  <!-- 1. Kangnam & Inconus -->
+  <div class="company-block">
+    <div class="company-header">
+      <div class="company-name">株式会社 カンナム＆インコヌス（韓国 釜山）</div>
+      <div class="company-meta">2025年09月 ～ 現在在職中 | 正社員</div>
+    </div>
+    <div style="font-size:8.4pt; color:#64748b; margin-bottom:3px;"><strong>担当役職：</strong>プラットフォーム開発チーム 主任研究員（バックエンドリード）</div>
+
+    <div class="project-title">【プロジェクト】LHスマート安全管理B2B SaaSプラットフォーム v2 コア構築</div>
+    <ul class="bullets">
+      <li><strong>3層ハイブリッド永続化設計：</strong>JPA（単純CRUD）、QueryDSL（動的検索）、MyBatis（大量集計）の責務分離アーキテクチャを確立。</li>
+      <li><strong>集計クエリ最適化（95%レイテンシ削減）：</strong>生ログ全件スキャン方式を複合インデックス（<code>workplace_id</code>, <code>measure_date</code>, <code>status</code>）および時間帯バケット集計のMyBatisクエリへ再設計（2,000ms+ &rarr; 80ms）。</li>
+      <li><strong>公共気象API移行とCaffeineキャッシュ導入：</strong>外部有料APIから韓国気象庁公共データAPIへ移行し、TTL 10〜30分のCaffeine Local Cacheを適用（外部API通信を<strong>80%以上削減</strong>、応答速度5ms以内達成）。</li>
+      <li><strong>マルチテナント認可エンジン開発：</strong>発注者・元請・下請の3階層組織データを厳格に分離する<code>ReadScopeResolver</code>を設計・実装し、ページング総数（<code>totalCount</code>）とリストの整合性<strong>100%を保証</strong>。</li>
+      <li><strong>Transactional Outboxパターン構築：</strong>危険通知（FCM、カカオ通知トーク、STOMP）をOutboxテーブルへ分離し、外部通信障害時におけるメイントランザクションの巻き戻りを防止。</li>
+      <li><strong>Linux Swapチューニングによる無停止運用：</strong>CloudWatchのI/O遅延メトリクス解析に基づき2GB Swap領域を増設、<strong>OOMサーバーダウンゼロ</strong>を達成。未稼働EB環境7件・Route53レコードを削除しクラウドコストを削減。</li>
+      <li><strong>位置情報サービス（LBS）許認可対応：</strong>DB上のGPS座標<strong>AES-256暗号化</strong>および法定アクセス監査ログ追跡システムを構築。</li>
+      <li><strong>開発者ツールの内製化：</strong>フロントエンド非依存でソケット疎通を確認できる独立型「WebSocket/STOMP デバッグコンソール」Webツールを独自開発。</li>
+    </ul>
+    <div class="project-env"><strong>[開発環境]</strong> Java 21, Spring Boot 3.4, MariaDB, JPA, QueryDSL, MyBatis, Caffeine, AWS (EC2, RDS, CloudWatch), Docker, WebSocket</div>
+  </div>
+
+  <!-- ==================== PAGE 2 ==================== -->
+  <div class="page-break"></div>
+
+  <!-- 2. Smart Social -->
+  <div class="company-block" style="margin-top: 4px;">
+    <div class="company-header">
+      <div class="company-name">株式会社 スマートソーシャル（韓国 釜山）</div>
+      <div class="company-meta">2023年05月 ～ 2025年08月（2年4ヶ月） | 正社員</div>
+    </div>
+    <div style="font-size:8.4pt; color:#64748b; margin-bottom:3px;"><strong>担当役職：</strong>サービス企画開発チーム リード（主任）</div>
+
+    <div class="project-title">【プロジェクト】公共教育支援・多文化生徒進路プラットフォーム開発およびインフラ運用</div>
+    <ul class="bullets">
+      <li><strong>動的多言語レンダリング基盤の構築：</strong>多文化生徒進路プラットフォーム（<code>da2um.kr</code>）にて、ハードコードされた多言語画面を刷新し、Excel翻訳データ連動型の単一テンプレート動的レンダリングエンジンを構築（保守工数を<strong>約90%削減</strong>）。</li>
+      <li><strong>SSO中継サーバー障害復旧と暗号化通信：</strong>大学産学連携プラットフォーム（LINC 3.0）の上位機関セキュリティ検査に伴うポート遮断障害に対し、迅速なポート再割り当ておよびHTTPS/TLS暗号化通信を再構築してサービスを復旧。</li>
+      <li><strong>DB運用自動化スクリプト内製化：</strong>Bastion SSHポートフォワーディング環境下にてPython（venv, Pandas, Openpyxl）による本番DBスキーマ自動抽出ツールおよび大量Excelデータ自動投入パイプライン（<code>readExcel</code>）を開発・運用。</li>
+      <li><strong>サードパーティ連携ROI検討：</strong>外部ツール（Canva、Slack Enterprise API）の導入妥当性・ライセンス費用分析、デイリーヘルスチェック体制を運用。</li>
+    </ul>
+    <div class="project-env"><strong>[開発環境]</strong> PHP (Laravel), Spring Boot, Python, Pandas, Openpyxl, MySQL, AWS</div>
+  </div>
+
+  <!-- 3. AXAS Japan -->
+  <div class="company-block">
+    <div class="company-header">
+      <div class="company-name">アクサス株式会社（日本 大阪）</div>
+      <div class="company-meta">2019年04月 ～ 2023年04月（4年1ヶ月） | 正社員</div>
+    </div>
+    <div style="font-size:8.4pt; color:#64748b; margin-bottom:3px;"><strong>担当役職：</strong>第2エンジニアリング部 システムエンジニア (SE)</div>
+
+    <div class="project-title">【プロジェクト】エンタープライズ基幹系システムのレガシー刷新およびデータチューニング</div>
+    <ul class="bullets">
+      <li><strong>鉄道駅務内部システム刷新：</strong>COBOLで構築された基幹業務ロジックをリバースエンジニアリングし、C# WinFormsシステムへマイグレーション。座席予約・発券・料金マスタ管理の正確な移行を実施。</li>
+      <li><strong>金属工業工程管理システムWEB化：</strong>Delphi製オンプレミスプログラムを社内イントラネットC# Webシステムへ移行、ストアドプロシージャおよびDATファイルバッチ処理ルーチンをモダンなC#関数ロジックへ安全に刷新。</li>
+      <li><strong>大手家電量販店 流通データパイプラインチューニング：</strong>PostgreSQLおよびGoogle BigQueryのクエリ実行計画（Execution Plan）を分析し、不要なフルテーブルスキャン・結合処理を排除して夜間バッチ性能を改善。</li>
+      <li><strong>テスト仕様書策定とデータ整合性担保：</strong>段階的なテスト仕様書の策定および回帰テスト体制の徹底運用により、言語移行前後で<strong>計算誤差0件・ビジネスロジックの完全な無矛盾性（100%整合性）</strong>を担保。</li>
+    </ul>
+    <div class="project-env"><strong>[開発環境]</strong> C# (.NET Core, WinForms), Delphi, COBOL, PostgreSQL, Google BigQuery, Oracle</div>
+  </div>
+
+  <div class="section-title">■ 保有資格・学歴 (Certifications &amp; Education)</div>
+  <table class="skills-table">
+    <tr>
+      <td class="cat">保有資格</td>
+      <td class="val">
+        &bull; <strong>AWS Certified Solutions Architect – Associate (SAA)</strong> | AWS (2025年05月)<br>
+        &bull; <strong>AWS Certified Cloud Practitioner (CLF)</strong> | AWS (2025年04月)<br>
+        &bull; <strong>日本語能力試験 (JLPT) 1級</strong> | 日本国際交流基金 / JEES (2025年08月)
+      </td>
+    </tr>
+    <tr>
+      <td class="cat">学歴</td>
+      <td class="val">
+        &bull; <strong>東義大学校 経営情報学科 卒業</strong>（2012年03月 ～ 2019年02月）
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
