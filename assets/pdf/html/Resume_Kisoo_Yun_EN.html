@@ -149,7 +149,7 @@
   <!-- ==================== PAGE 1 ==================== -->
   <div class="header">
     <h1>YUN KISOO</h1>
-    <div class="subtitle">Senior Backend Engineer | High-Performance Systems & Cloud Architecture</div>
+    <div class="subtitle">Senior Backend Engineer | High-Performance Systems &amp; Cloud Architecture</div>
     <div class="contact-bar">
       <span>Busan, South Korea</span> &bull;
       <span>+82 10-8215-5781</span> &bull;
@@ -162,7 +162,7 @@
 
   <div class="section-title">Professional Summary</div>
   <div class="summary">
-    Senior Backend Engineer with 7+ years of experience across South Korea and Japan, specializing in high-performance API core design, database optimization, and enterprise architecture modernization. Proven track record of reducing query latency by 95%, designing multi-tenant authorization engines, building automated data ingestion tools, and achieving zero downtime on AWS. Adept at asynchronous, documentation-driven communication (RFCs, GitHub PRs, Slack), with extensive experience in cross-border distributed teams. Holds AWS Certified Solutions Architect – Associate (SAA).
+    Senior Backend Engineer with 7+ years of experience across South Korea and Japan, specializing in high-performance API core design, database optimization, and enterprise architecture modernization. Proven track record of reducing query latency by 95%, designing multi-tenant authorization engines, building automated data ingestion tools, and achieving zero downtime on AWS. Experienced in asynchronous, documentation-driven engineering (RFCs, ADRs, PR reviews) across cross-border distributed teams. Holds AWS Certified Solutions Architect – Associate (SAA).
   </div>
 
   <div class="section-title">Technical Skills</div>
@@ -172,23 +172,23 @@
       <td class="val">Java (21), C# (.NET Core, WinForms), PHP, Python, SQL, JavaScript/TypeScript</td>
     </tr>
     <tr>
-      <td class="cat">Frameworks & Core</td>
+      <td class="cat">Frameworks &amp; Core</td>
       <td class="val">Spring Boot (3.x), Spring Security, Spring Data JPA, QueryDSL, MyBatis, ASP.NET Core, Laravel</td>
     </tr>
     <tr>
-      <td class="cat">Databases & Caching</td>
+      <td class="cat">Databases &amp; Caching</td>
       <td class="val">MariaDB, MySQL, PostgreSQL, Google BigQuery, Caffeine Local Cache</td>
     </tr>
     <tr>
-      <td class="cat">Messaging & Real-Time</td>
+      <td class="cat">Messaging &amp; Real-Time</td>
       <td class="val">Spring WebSocket (STOMP), SockJS, FCM, Naver Cloud SENS</td>
     </tr>
     <tr>
-      <td class="cat">Cloud & DevOps (AWS SAA)</td>
+      <td class="cat">Cloud &amp; DevOps (AWS SAA)</td>
       <td class="val">AWS (EC2, RDS, S3, CloudFront, Athena, CloudWatch, Elastic Beanstalk), Docker, Nginx, GitHub Actions</td>
     </tr>
     <tr>
-      <td class="cat">Architecture & Patterns</td>
+      <td class="cat">Architecture &amp; Patterns</td>
       <td class="val">Multi-Tenancy Scope Isolation, Transactional Outbox Pattern, Micro-tools/MCP, RESTful APIs</td>
     </tr>
     <tr>
@@ -203,19 +203,20 @@
   <div class="entry">
     <div class="entry-header">
       <div class="entry-left">
-        <span class="company">Kangnam & Inconus Co., Ltd.</span> &mdash; <span class="role">Senior Backend Engineer / Corporate R&D Lead</span>
+        <span class="company">Kangnam &amp; Inconus Co., Ltd.</span> &mdash; <span class="role">Senior Backend Engineer / Corporate R&amp;D Lead</span>
       </div>
       <div class="entry-right">Sep 2025 – Present | Busan, South Korea</div>
     </div>
     <ul class="bullets">
-      <li>Lead backend architecture and cloud operations for the B2B Enterprise Smart Safety Management SaaS (LH KeepME v2).</li>
-      <li><strong>Database & Query Optimization:</strong> Restructured raw-log aggregation queries using DB time-bucketing and composite indexing (<code>workplace_id</code>, <code>measure_date</code>, <code>status</code>) via MyBatis, reducing response latency from <strong>2,000ms+ to 80ms (95% performance gain)</strong>.</li>
-      <li><strong>Resilient In-Memory Caching:</strong> Replaced commercial weather APIs with Korea Meteorological Administration (KMA) public APIs and implemented a 10-30m TTL <strong>Caffeine Cache</strong> layer, cutting redundant calls by <strong>80%+</strong> and slashing latency to <strong>&lt;5ms</strong>.</li>
+      <li>Led backend architecture and cloud operations for the B2B Enterprise Smart Safety Management SaaS (LH KeepME v2).</li>
+      <li><strong>Database &amp; Query Optimization:</strong> Restructured raw-log aggregation queries using DB time-bucketing and composite indexing (<code>workplace_id</code>, <code>measure_date</code>, <code>status</code>) via MyBatis, reducing response latency from <strong>2,000ms+ to 80ms (95% latency reduction)</strong>.</li>
+      <li><strong>Resilient In-Memory Caching:</strong> Replaced commercial weather APIs with Korea Meteorological Administration (KMA) public APIs and implemented a 10-30m TTL <strong>Caffeine Cache</strong> layer, cutting redundant calls by <strong>80%+</strong> and reducing latency to <strong>&lt;5ms</strong>.</li>
       <li><strong>Multi-Tenant Authorization Engine:</strong> Designed <code>ReadScopeResolver</code> and <code>AgencyHierarchyService</code> to enforce 3-tier organizational data isolation (Client &gt; Prime Contractor &gt; Subcontractor), ensuring <strong>100% data consistency</strong> between pagination totals (<code>totalCount</code>) and filtered record sets.</li>
       <li><strong>Asynchronous Messaging Architecture:</strong> Architected a <strong>Transactional Outbox Pattern</strong> to decouple real-time mobile push (FCM), Kakao AlimTalk, and STOMP broadcasts from database business transactions, ensuring zero message loss during external network outages.</li>
-      <li><strong>Cloud Stability & Cost Triage:</strong> Diagnosed EC2 OOM crashes caused by storage I/O stalls via CloudWatch; provisioned a 2GB Linux swap space to absorb memory spikes, achieving <strong>zero server downtime</strong>. Cleaned up 7 dormant Elastic Beanstalk environments and orphaned Route53 records, significantly reducing fixed cloud expenses.</li>
-      <li><strong>Regulatory Compliance & Security:</strong> Built an automated <strong>AES-256</strong> database-level encryption and decryption pipeline for GPS coordinates alongside access audit trail registries, securing statutory licensing for Location-Based Services (LBS).</li>
-      <li><strong>Developer Tooling & Testing Infrastructure:</strong> Built a standalone browser-based <strong>WebSocket/STOMP Debug Console</strong> (supporting STOMP/Raw WebSocket, SockJS, custom headers, and preset management) to isolate and verify backend real-time endpoints independently of frontend delivery. Configured a custom local Model Context Protocol (MCP) server to index and cross-reference multiple enterprise repositories.</li>
+      <li><strong>Cloud Stability &amp; OOM Triage:</strong> Diagnosed EC2 memory exhaustion caused by storage I/O stalls via CloudWatch; provisioned a 2GB Linux swap space to absorb transient spikes, achieving <strong>zero server downtime</strong>.</li>
+      <li><strong>Cloud Cost Optimization:</strong> Decommissioned 7 dormant Elastic Beanstalk environments and purged orphaned Route53 DNS records, significantly cutting fixed cloud infrastructure expenses.</li>
+      <li><strong>Regulatory Compliance &amp; Security:</strong> Built an automated <strong>AES-256</strong> database-level encryption and decryption pipeline for GPS coordinates alongside access audit trail registries to satisfy regulatory compliance for Location-Based Services (LBS).</li>
+      <li><strong>Developer Tooling &amp; Testing Infrastructure:</strong> Built a standalone browser-based <strong>WebSocket/STOMP Debug Console</strong> (supporting STOMP/Raw WebSocket, SockJS, custom headers, and preset management) to isolate and verify backend real-time endpoints independently of frontend delivery. Configured a custom local Model Context Protocol (MCP) server to index and cross-reference multiple enterprise repositories.</li>
     </ul>
   </div>
 
@@ -232,9 +233,9 @@
     </div>
     <ul class="bullets">
       <li><strong>Dynamic Localization Architecture:</strong> Overhauled localization pipeline for multicultural student career platform (<code>da2um.kr</code>) by replacing hardcoded templates with a unified Excel-driven dynamic rendering engine, reducing maintenance overhead by <strong>~90%</strong>.</li>
-      <li><strong>Security & Middleware Recovery:</strong> Resolved an emergency SSO outage for University LINC 3.0 platform by refactoring legacy Spring Boot middleware under blocked-port conditions, migrating to alternate ports, and establishing HTTPS/TLS encryption.</li>
+      <li><strong>Security &amp; Middleware Recovery:</strong> Resolved an emergency SSO outage for University LINC 3.0 platform by refactoring legacy Spring Boot middleware under blocked-port conditions, migrating to alternate ports, and establishing HTTPS/TLS encryption.</li>
       <li><strong>Internal Automation Pipelines:</strong> Engineered automated Python scripts (Virtualenv, Pandas, Openpyxl) over Bastion SSH port-forwarding to extract relational database schemas and automate bulk operational data ingestion (<code>readExcel</code>), eliminating repetitive manual database operations.</li>
-      <li><strong>Feasibility & Availability Auditing:</strong> Led technical feasibility and licensing ROI assessments for third-party enterprise integrations (Canva, Slack API); instituted daily health-check routines across production endpoints.</li>
+      <li><strong>Feasibility &amp; Availability Auditing:</strong> Led technical feasibility and licensing ROI assessments for third-party enterprise integrations (Canva, Slack API); instituted daily health-check routines across production endpoints.</li>
     </ul>
   </div>
 
@@ -249,11 +250,11 @@
     <ul class="bullets">
       <li><strong>Enterprise Legacy Modernization:</strong> Reverse-engineered mission-critical railway station master software from COBOL to C# Forms, modernizing functional business algorithms and UI workflows. Migrated on-premise Delphi manufacturing process management systems into intranet C# web applications, modernizing DAT batch routines and stored procedures.</li>
       <li><strong>Large-Scale Data Query Tuning:</strong> Conducted deep query execution plan analysis across PostgreSQL and Google BigQuery for a nationwide electronics retailer, eliminating unindexed scans and optimizing batch analytical processing.</li>
-      <li><strong>Quality Assurance & Verification:</strong> Established exhaustive test specifications, automated test data scripts, and defect reproduction workflows, guaranteeing <strong>zero data regression and calculation discrepancies</strong> during language and framework transitions.</li>
+      <li><strong>Quality Assurance &amp; Verification:</strong> Established exhaustive test specifications, automated test data scripts, and defect reproduction workflows, guaranteeing <strong>zero data regression and calculation discrepancies</strong> during language and framework transitions.</li>
     </ul>
   </div>
 
-  <div class="section-title">Certifications & Education</div>
+  <div class="section-title">Certifications &amp; Education</div>
   <table class="skills-table">
     <tr>
       <td class="cat">Certifications</td>

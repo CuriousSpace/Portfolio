@@ -6,7 +6,7 @@ Busan, South Korea | +82 10-8215-5781 | silverromance@hanmail.net
 ---
 
 ## PROFESSIONAL SUMMARY
-Senior Backend Engineer with 7+ years of experience across South Korea and Japan, specializing in high-performance API core design, database optimization, and enterprise architecture modernization. Proven track record of reducing query latency by 95%, designing multi-tenant authorization engines, building automated data ingestion tools, and achieving zero downtime on AWS. Adept at asynchronous, documentation-driven communication (RFCs, GitHub PRs, Slack), with extensive experience in cross-border distributed teams. Holds AWS Certified Solutions Architect – Associate (SAA).
+Senior Backend Engineer with 7+ years of experience across South Korea and Japan, specializing in high-performance API core design, database optimization, and enterprise architecture modernization. Proven track record of reducing query latency by 95%, designing multi-tenant authorization engines, building automated data ingestion tools, and achieving zero downtime on AWS. Experienced in asynchronous, documentation-driven engineering (RFCs, ADRs, PR reviews) across cross-border distributed teams. Holds AWS Certified Solutions Architect – Associate (SAA).
 
 ---
 
@@ -25,13 +25,14 @@ Senior Backend Engineer with 7+ years of experience across South Korea and Japan
 
 ### Kangnam & Inconus Co., Ltd. — Senior Backend Engineer / Corporate R&D Lead
 *Sep 2025 – Present | Busan, South Korea*
-- Lead backend architecture and cloud operations for the B2B Enterprise Smart Safety Management SaaS (LH KeepME v2).
-- **Database & Query Optimization:** Restructured raw-log aggregation queries using DB time-bucketing and composite indexing (`workplace_id`, `measure_date`, `status`) via MyBatis, reducing response latency from **2,000ms+ to 80ms (95% performance gain)**.
-- **Resilient In-Memory Caching:** Replaced commercial weather APIs with Korea Meteorological Administration (KMA) public APIs and implemented a 10-30m TTL **Caffeine Cache** layer, cutting redundant calls by **80%+** and slashing latency to **<5ms**.
+- Led backend architecture and cloud operations for the B2B Enterprise Smart Safety Management SaaS (LH KeepME v2).
+- **Database & Query Optimization:** Restructured raw-log aggregation queries using DB time-bucketing and composite indexing (`workplace_id`, `measure_date`, `status`) via MyBatis, reducing response latency from **2,000ms+ to 80ms (95% latency reduction)**.
+- **Resilient In-Memory Caching:** Replaced commercial weather APIs with Korea Meteorological Administration (KMA) public APIs and implemented a 10-30m TTL **Caffeine Cache** layer, cutting redundant calls by **80%+** and reducing latency to **<5ms**.
 - **Multi-Tenant Authorization Engine:** Designed `ReadScopeResolver` and `AgencyHierarchyService` to enforce 3-tier organizational data isolation (Client > Prime Contractor > Subcontractor), ensuring **100% data consistency** between pagination totals (`totalCount`) and filtered record sets.
 - **Asynchronous Messaging Architecture:** Architected a **Transactional Outbox Pattern** to decouple real-time mobile push (FCM), Kakao AlimTalk, and STOMP broadcasts from database business transactions, ensuring zero message loss during external network outages.
-- **Cloud Stability & Cost Triage:** Diagnosed EC2 OOM crashes caused by storage I/O stalls via CloudWatch; provisioned a 2GB Linux swap space to absorb memory spikes, achieving **zero server downtime**. Cleaned up 7 dormant Elastic Beanstalk environments and orphaned Route53 records, significantly reducing fixed cloud expenses.
-- **Regulatory Compliance & Security:** Built an automated **AES-256** database-level encryption and decryption pipeline for GPS coordinates alongside access audit trail registries, securing statutory licensing for Location-Based Services (LBS).
+- **Cloud Stability & OOM Triage:** Diagnosed EC2 memory exhaustion caused by storage I/O stalls via CloudWatch; provisioned a 2GB Linux swap space to absorb transient spikes, achieving **zero server downtime**.
+- **Cloud Cost Optimization:** Decommissioned 7 dormant Elastic Beanstalk environments and purged orphaned Route53 DNS records, significantly cutting fixed cloud infrastructure expenses.
+- **Regulatory Compliance & Security:** Built an automated **AES-256** database-level encryption and decryption pipeline for GPS coordinates alongside access audit trail registries to satisfy regulatory compliance for Location-Based Services (LBS).
 - **Developer Tooling & Testing Infrastructure:** Built a standalone browser-based **WebSocket/STOMP Debug Console** (supporting STOMP/Raw WebSocket, SockJS, custom headers, and preset management) to isolate and verify backend real-time endpoints independently of frontend delivery. Configured a custom local Model Context Protocol (MCP) server to index and cross-reference multiple enterprise repositories.
 
 ### Smart Social Co., Ltd. — Senior Software Engineer (Lead)
