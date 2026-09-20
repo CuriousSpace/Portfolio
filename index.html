@@ -94,18 +94,19 @@
     <section>
       <h2>Work Experience</h2>
 
-      <!-- Current Experience: Kangnam & Inconus -->
+      <!-- Current Experience: Gangnam & Inconus -->
       <div class="card">
-        <div class="card-title">Kangnam & Inconus Co., Ltd. | Senior Backend Engineer / R&D Lead</div>
+        <div class="card-title">Gangnam & Inconus Co., Ltd. | Senior Backend Engineer / R&D Lead</div>
         <div class="card-meta">Sep 2025 – Present · Busan, South Korea</div>
         <ul class="desc-list">
-          <li>Spearheading backend core architecture and cloud infrastructure for an enterprise B2B safety management SaaS (KeepME v2).</li>
+          <li>Led backend architecture and cloud operations for the B2B Enterprise Smart Safety Management SaaS (LH KeepME v2).</li>
           <li>Established a triple-hybrid persistence layer decoupling Spring Data JPA (CRUD), QueryDSL (dynamic filtering), and MyBatis (heavy aggregations).</li>
-          <li>Optimized raw-log aggregation bottlenecks via composite indexing and time-bucketing in MyBatis, reducing latency from 2,000ms+ down to 80ms.</li>
-          <li>Replaced commercial weather services with Korea Meteorological Administration public APIs and configured Caffeine Cache, slashing latency to &lt;5ms.</li>
+          <li>Optimized raw-log aggregation bottlenecks via composite indexing and time-bucketing in MyBatis, reducing latency from 2,000ms+ down to 80ms (95% drop).</li>
+          <li>Replaced commercial weather services with Korea Meteorological Administration public APIs and configured Caffeine Cache, reducing latency to &lt;5ms.</li>
           <li>Designed a 3-tier multi-tenant authorization engine (ReadScopeResolver) ensuring 100% data consistency across pagination boundaries.</li>
           <li>Architected a Transactional Outbox Pattern to decouple real-time alerts (FCM, Kakao AlimTalk, STOMP), preventing transaction rollbacks during network faults.</li>
-          <li>Enforced statutory Location-Based Services (LBS) compliance by implementing DB-level AES-256 encryption and access audit logging.</li>
+          <li>Diagnosed EC2 memory exhaustion caused by storage I/O stalls via CloudWatch; provisioned a 2GB Linux swap space to absorb transient spikes, achieving zero server downtime.</li>
+          <li>Enforced Location-Based Services (LBS) regulatory compliance by implementing DB-level AES-256 encryption and automated audit logging.</li>
         </ul>
         <div class="tag-group">
           <span class="tag">Java 21</span>
@@ -124,7 +125,7 @@
         <div class="card-meta">May 2023 – Aug 2025 · Busan, South Korea</div>
         <ul class="desc-list">
           <li>Overhauled localization architecture for education platform (da2um.kr) by replacing hardcoded templates with a unified Excel-driven dynamic rendering pipeline, reducing maintenance costs by ~90%.</li>
-          <li>Recovered blocked SSO middleware ports for University LINC 3.0 platform and established secure HTTPS/TLS encrypted communication.</li>
+          <li>Recovered blocked SSO middleware ports for University LINC 3.0 platform by refactoring legacy Spring Boot middleware and establishing HTTPS/TLS encrypted communication.</li>
           <li>Automated operational database schema extraction and bulk data ingestion (readExcel) using Python (Pandas/Openpyxl) over Bastion SSH port-forwarding.</li>
           <li>Led feasibility and ROI analyses for third-party enterprise integrations (Canva, Slack API); instituted daily health-check routines.</li>
         </ul>
@@ -143,7 +144,7 @@
         <div class="card-title">AXAS Co., Ltd. | Software Engineer</div>
         <div class="card-meta">Apr 2019 – Apr 2023 · Osaka, Japan</div>
         <ul class="desc-list">
-          <li>Reverse-engineered mission-critical railway station operation logic from COBOL to C# WinForms, ensuring modernized UI execution.</li>
+          <li>Reverse-engineered mission-critical railway station operation logic from COBOL to C# WinForms, modernizing functional algorithms and UI workflows.</li>
           <li>Migrated on-premise Delphi manufacturing management programs into intranet C# web systems, modernizing DAT file batch routines.</li>
           <li>Conducted execution plan analysis across PostgreSQL and Google BigQuery for a nationwide electronics retailer, resolving query bottlenecks.</li>
           <li>Authored comprehensive test specifications and regression suites, maintaining zero calculation discrepancies across platform transitions.</li>
@@ -163,9 +164,9 @@
       <h2>Certifications & Education</h2>
       <div class="card">
         <ul class="desc-list">
-          <li>AWS Certified Solutions Architect – Associate (AWS, 2025)</li>
-          <li>AWS Certified Cloud Practitioner (AWS, 2025)</li>
-          <li>Japanese Language Proficiency Test JLPT N1 (2025)</li>
+          <li>AWS Certified Solutions Architect – Associate (AWS, May 2025)</li>
+          <li>AWS Certified Cloud Practitioner (AWS, Apr 2025)</li>
+          <li>Japanese Language Proficiency Test JLPT N1 (Aug 2025)</li>
           <li>B.S. in Management Information Systems (MIS), Dong-eui University (2012.03 – 2019.02)</li>
         </ul>
       </div>

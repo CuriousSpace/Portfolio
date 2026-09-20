@@ -23,7 +23,7 @@ Senior Backend Engineer with 7+ years of experience across South Korea and Japan
 
 ## WORK EXPERIENCE
 
-### Kangnam & Inconus Co., Ltd. — Senior Backend Engineer / Corporate R&D Lead
+### Gangnam & Inconus Co., Ltd. — Senior Backend Engineer / Corporate R&D Lead
 *Sep 2025 – Present | Busan, South Korea*
 - Led backend architecture and cloud operations for the B2B Enterprise Smart Safety Management SaaS (LH KeepME v2).
 - **Database & Query Optimization:** Restructured raw-log aggregation queries using DB time-bucketing and composite indexing (`workplace_id`, `measure_date`, `status`) via MyBatis, reducing response latency from **2,000ms+ to 80ms (95% latency reduction)**.
