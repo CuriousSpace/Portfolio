@@ -210,7 +210,7 @@
   <!-- 1. Kangnam & Inconus -->
   <div class="company-block">
     <div class="company-header">
-      <div class="company-name">株式会社 カンナム＆インコヌス（韓国 釜山）</div>
+      <div class="company-name">株式会社 江南＆インコヌス（韓国 釜山）</div>
       <div class="company-meta">2025年09月 ～ 現在在職中 | 正社員</div>
     </div>
     <div style="font-size:8.4pt; color:#64748b; margin-bottom:3px;"><strong>担当役職：</strong>プラットフォーム開発チーム 主任研究員（バックエンドリード）</div>
@@ -221,8 +221,8 @@
       <li><strong>集計クエリ最適化（95%レイテンシ削減）：</strong>生ログ全件スキャン方式を複合インデックス（<code>workplace_id</code>, <code>measure_date</code>, <code>status</code>）および時間帯バケット集計のMyBatisクエリへ再設計（2,000ms+ &rarr; 80ms）。</li>
       <li><strong>公共気象API移行とCaffeineキャッシュ導入：</strong>外部有料APIから韓国気象庁公共データAPIへ移行し、TTL 10〜30分のCaffeine Local Cacheを適用（外部API通信を<strong>80%以上削減</strong>、応答速度5ms以内達成）。</li>
       <li><strong>マルチテナント認可エンジン開発：</strong>発注者・元請・下請の3階層組織データを厳格に分離する<code>ReadScopeResolver</code>を設計・実装し、ページング総数（<code>totalCount</code>）とリストの整合性<strong>100%を保証</strong>。</li>
-      <li><strong>Transactional Outboxパターン構築：</strong>危険通知（FCM、カカオ通知トーク、STOMP）をOutboxテーブルへ分離し、外部通信障害時におけるメイントランザクションの巻き戻りを防止。</li>
-      <li><strong>Linux Swapチューニングによる無停止運用：</strong>CloudWatchのI/O遅延メトリクス解析に基づき2GB Swap領域を増設、<strong>OOMサーバーダウンゼロ</strong>を達成。未稼働EB環境7件・Route53レコードを削除しクラウドコストを削減。</li>
+      <li><strong>Transactional Outboxパターン構築：</strong>外部通知（緊急アラート・FCM・カカオ通知トーク・STOMP）をOutboxテーブルへ分離し、外部通信障害時におけるメインビジネストランザクションのロールバックを防止。</li>
+      <li><strong>Linux Swapチューニングによる無停止運用：</strong>CloudWatchのI/O遅延メトリクス解析に基づき2GB Swap領域を増設、<strong>OOMサーバーダウンゼロ</strong>を達成。未稼働EB環境7件・不要なRoute53レコードを削除しクラウドコストを削減。</li>
       <li><strong>位置情報サービス（LBS）許認可対応：</strong>DB上のGPS座標<strong>AES-256暗号化</strong>および法定アクセス監査ログ追跡システムを構築。</li>
       <li><strong>開発者ツールの内製化：</strong>フロントエンド非依存でソケット疎通を確認できる独立型「WebSocket/STOMP デバッグコンソール」Webツールを独自開発。</li>
     </ul>
@@ -275,7 +275,7 @@
       <td class="val">
         &bull; <strong>AWS Certified Solutions Architect – Associate (SAA)</strong> | AWS (2025年05月)<br>
         &bull; <strong>AWS Certified Cloud Practitioner (CLF)</strong> | AWS (2025年04月)<br>
-        &bull; <strong>日本語能力試験 (JLPT) 1級</strong> | 日本国際交流基金 / JEES (2025年08月)
+        &bull; <strong>日本語能力試験 (JLPT) N1</strong> | 日本国際交流基金 / JEES (2025年08月)
       </td>
     </tr>
     <tr>
