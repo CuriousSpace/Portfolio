@@ -44,7 +44,7 @@ Senior Backend Engineer with 7+ years of experience across South Korea and Japan
 
 ### AXAS Co., Ltd. — Software Engineer (Enterprise SI Division)
 *Apr 2019 – Apr 2023 | Osaka, Japan*
-- **Enterprise Legacy Modernization:** Reverse-engineered mission-critical railway station master software from COBOL to C# Forms, modernizing functional business algorithms and UI workflows. Migrated on-premise Delphi manufacturing process management systems into intranet C# web applications, modernizing DAT batch routines and stored procedures.
+- **Enterprise Legacy Modernization:** Reverse-engineered mission-critical railway station master software from COBOL to C# WinForms, modernizing functional business algorithms and UI workflows. Migrated on-premise Delphi manufacturing process management systems into intranet C# web applications, modernizing DAT batch routines and stored procedures.
 - **Large-Scale Data Query Tuning:** Conducted deep query execution plan analysis across PostgreSQL and Google BigQuery for a nationwide electronics retailer, eliminating unindexed scans and optimizing batch analytical processing.
 - **Quality Assurance & Verification:** Established exhaustive test specifications, automated test data scripts, and defect reproduction workflows, guaranteeing **zero data regression and calculation discrepancies** during language and framework transitions.
 

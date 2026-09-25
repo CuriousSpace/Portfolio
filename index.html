@@ -96,16 +96,17 @@
 
       <!-- Current Experience: Gangnam & Inconus -->
       <div class="card">
-        <div class="card-title">Gangnam & Inconus Co., Ltd. | Senior Backend Engineer / R&D Lead</div>
+        <div class="card-title">Gangnam & Inconus Co., Ltd. | Senior Backend Engineer / Corporate R&D Lead</div>
         <div class="card-meta">Sep 2025 – Present · Busan, South Korea</div>
         <ul class="desc-list">
           <li>Led backend architecture and cloud operations for the B2B Enterprise Smart Safety Management SaaS (LH KeepME v2).</li>
           <li>Established a triple-hybrid persistence layer decoupling Spring Data JPA (CRUD), QueryDSL (dynamic filtering), and MyBatis (heavy aggregations).</li>
           <li>Optimized raw-log aggregation bottlenecks via composite indexing and time-bucketing in MyBatis, reducing latency from 2,000ms+ down to 80ms (95% drop).</li>
-          <li>Replaced commercial weather services with Korea Meteorological Administration public APIs and configured Caffeine Cache, reducing latency to &lt;5ms.</li>
+          <li>Replaced commercial weather services with Korea Meteorological Administration (KMA) public APIs and configured Caffeine Cache, cutting redundant calls by 80%+ and reducing latency to &lt;5ms.</li>
           <li>Designed a 3-tier multi-tenant authorization engine (ReadScopeResolver) ensuring 100% data consistency across pagination boundaries.</li>
           <li>Architected a Transactional Outbox Pattern to decouple real-time alerts (FCM, Kakao AlimTalk, STOMP), preventing transaction rollbacks during network faults.</li>
           <li>Diagnosed EC2 memory exhaustion caused by storage I/O stalls via CloudWatch; provisioned a 2GB Linux swap space to absorb transient spikes, achieving zero server downtime.</li>
+          <li>Decommissioned 7 dormant Elastic Beanstalk environments and purged orphaned Route53 DNS records, significantly cutting fixed cloud infrastructure expenses.</li>
           <li>Enforced Location-Based Services (LBS) regulatory compliance by implementing DB-level AES-256 encryption and automated audit logging.</li>
         </ul>
         <div class="tag-group">
@@ -121,7 +122,7 @@
 
       <!-- Previous Experience: Smart Social -->
       <div class="card">
-        <div class="card-title">Smart Social Co., Ltd. | Senior Software Engineer</div>
+        <div class="card-title">Smart Social Co., Ltd. | Senior Software Engineer (Lead)</div>
         <div class="card-meta">May 2023 – Aug 2025 · Busan, South Korea</div>
         <ul class="desc-list">
           <li>Overhauled localization architecture for education platform (da2um.kr) by replacing hardcoded templates with a unified Excel-driven dynamic rendering pipeline, reducing maintenance costs by ~90%.</li>
